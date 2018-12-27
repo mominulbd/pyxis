@@ -1,0 +1,51 @@
+.popular-city {
+	padding: 120px 0 100px;
+	background: $section__bg;
+}
+
+.city-image-box {
+	position: relative;
+	margin: 0 auto 30px;
+	max-width: 500px;
+
+
+	a {
+		display: block;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.302);
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		h3 {
+			position: absolute;
+			color: #fff;
+			padding: 30px;
+			font-size: 20px;
+			font-weight: 600;
+			z-index: 22;
+			bottom: 0;
+			margin: 0;
+		}
+	}
+}
+
+
+@media (max-width: 991px) {
+	.popular-city {
+		padding: 80px 0 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	.popular-city {
+		padding: 50px 0 20px;
+	}
+}

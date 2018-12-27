@@ -1,0 +1,161 @@
+.faq-samples {
+	background: $section__bg;
+}
+
+.faq_sample {
+	.card {
+		border: 0;
+		background: transparent;
+
+		.card-header {
+			padding: 0 0 20px;
+			background-color: transparent;
+			border: 0;
+
+			.btn-link {
+				padding: 0;
+				color: #222;
+				font-size: 16px;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+
+		.card-body {
+			padding: 0;
+
+			p {
+				font-weight: 500;
+				font-size: 16px;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
+
+#faqs {
+	padding: 130px 0 110px;
+}
+
+.faq-two {
+	.card {
+		border: 0;
+		background: transparent;
+		margin-bottom: 20px;
+
+		.card-header {
+			padding: 10px 15px;
+			background-color: $section__bg;
+			border: 1px solid #eeeeee;
+
+			h5 {
+				position: relative;
+
+				&:before {
+					content: "\e61a";
+					color: #aaaaaa;
+					display: block;
+					position: absolute;
+					font-size: 25px;
+					top: 50%;
+					right: 0;
+					z-index: 9;
+					font-family: 'themify';
+					transition: all 0.5s;
+					transform: translateY(-50%);
+					font-size: 16px;
+				}
+
+
+			}
+
+
+
+			.btn-link {
+				color: #222;
+				font-size: 16px;
+				font-weight: 600;
+				text-decoration: none;
+				white-space: normal;
+				text-align: left;
+
+			}
+
+			&.active {
+				background: $color__theme;
+				> h5::before {
+					content: "\e622";
+					color: #fff;
+				}
+
+				.btn-link {
+					color: #fff;
+				}
+			}
+		}
+
+		.card-body {
+			padding: 25px 0;
+
+			p {
+				font-weight: 500;
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+		}
+
+
+	}
+}
+
+.contact-support {
+	.content {
+		text-align: center;
+		margin-bottom: 40px;
+
+		h2 {
+			font-size: 36px;
+			font-weight: 600;
+		}
+	}
+}
+
+.contact-support-form {
+	.input-field {
+		margin-bottom: 25px;
+
+		input, textarea {
+			border-radius: 3px;
+
+			&::placeholder {
+				color: #999;
+			}
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		// &:last-child {
+		// 	margin-bottom: 20px;
+		// }
+	}
+}
+
+@media (max-width: 991px) {
+	#faqs {
+		padding: 80px 0 50px;
+	}
+
+	.faq-two {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	#faqs {
+		padding: 50px 0 20px;
+	}
+}

@@ -1,0 +1,283 @@
+body {
+	font-family: $font__primary;
+	font-size: 16px;
+	line-height: 26px;
+	color: $color__body;
+	font-weight: 400;
+}
+
+
+svg {
+	display: block;
+}
+
+a, button {
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font__heading;
+	margin-top: 0;
+	font-weight: 600;
+	color: #222;
+}
+
+.mb-130 {
+	margin-bottom: 130px;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+
+.mt-35 {
+	margin-top: 35px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	position: relative;
+}
+
+// .pr {
+// 	position: relative;
+// }
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+
+}
+
+/* Buttons */
+.sofin-btn {
+	border-radius: 3px;
+	// background: $color__theme;
+	color: #fff;
+	padding: 11px 43px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	border: 0;
+	border: 1px solid $color__theme;
+	background-image: linear-gradient(30deg, #8e42f7 50%, transparent 50%);
+	background-size: 540px;
+	background-repeat: no-repeat;
+	background-position: 0;
+	z-index: 222;
+
+	&.btn-circle {
+		border-radius: 30px;
+	}
+
+	&.btn-light {
+		background-image: linear-gradient(30deg, #fff 50%, transparent 50%);
+		color: #222;
+		border-color: #fff;
+		font-weight: 600;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&.btn-outline {
+		border: 1px solid $color__theme;
+		color: #222;
+		background: transparent;
+		background-position: 100%;
+		background-size: 540px;
+		background-repeat: no-repeat;
+		background-image: linear-gradient(30deg, #8e42f7 50%, transparent 50%);
+
+
+		&:hover {
+			color: #fff;
+			background-position: 0;
+			border-color: $color__theme;
+		}
+	}
+
+	&:hover {
+		background-position: 100%;
+		color: #222;
+		background-color: transparent;
+	}
+}
+
+
+/* Section Title */
+.section-title {
+	text-align: center;
+	margin-bottom: 80px;
+
+	.title {
+		font-size: 42px;
+		color: #222;
+		font-weight: 700;
+		margin-bottom: 15px;
+		letter-spacing: -0.5px;
+	}
+
+	p {
+		margin: 0;
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 500;
+	}
+}
+
+.title-two {
+	font-size: 35px;
+	font-weight: 600;
+	color: #222;
+	margin-bottom: 30px;
+}
+
+.section-content {
+	.title {
+		font-size: 34px;
+		line-height: 45px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+
+	p {
+		margin-bottom: 35px;
+		font-weight: 500;
+	}
+
+	&.dark {
+		.title, p {
+			color: #fff;
+		}
+	}
+}
+
+.section-padding {
+	padding: 120px 0 130px;
+}
+
+
+/*
+Flaticon icon font: Flaticon
+Creation date: 04/06/2018 14:38
+*/
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("./Flaticon.eot");
+	src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Flaticon.woff") format("woff"),
+	url("../fonts/Flaticon.ttf") format("truetype"),
+	url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: "Flaticon";
+		src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	}
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+	font-family: Flaticon;
+	font-style: normal;
+}
+
+
+.flaticon-book:before { content: "\f100"; }
+.flaticon-pencil:before { content: "\f101"; }
+.flaticon-rocket:before { content: "\f102"; }
+.flaticon-placeholder:before { content: "\f103"; }
+.flaticon-unlink:before { content: "\f104"; }
+.flaticon-call:before { content: "\f105"; }
+.flaticon-trophy:before { content: "\f106"; }
+.flaticon-earth-globe:before { content: "\f107"; }
+.flaticon-bar-chart:before { content: "\f108"; }
+
+
+@media (max-width: 1024px) {
+	.section-padding {
+		padding: 80px 0;
+	}
+
+	.section-title {
+		margin-bottom: 50px;
+
+		.title {
+			font-size: 35px;
+
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.section-padding {
+		padding: 80px 0;
+	}
+
+	.section-title {
+		.title {
+			font-size: 30px;
+		}
+
+		p {
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.section-content {
+		.title {
+			font-size: 30px;
+			line-height: 36px;
+
+
+			br {
+				display: none;
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 576px) {
+	.section-content {
+		.title {
+			font-size: 26px;
+			line-height: 30px;
+		}
+
+	}
+
+	.section-padding {
+		padding: 50px 0;
+	}
+
+
+
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+	.width-half {
+		width: 50%;
+	}
+}

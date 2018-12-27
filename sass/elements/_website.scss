@@ -1,0 +1,28 @@
+#website {
+	background: $section__bg;
+	padding: 130px 0;
+}
+
+.border-feature-image {
+	max-width: 460px;
+	border: 6px solid #f1f1f1;
+	box-shadow: 11.491px 9.642px 40px 0px rgba(153, 153, 153, 0.3);
+}
+
+@media (max-width: 991px) {
+	.website-feature-image, .border-feature-image {
+		margin-bottom: 40px;
+	}
+
+	#website {
+
+		padding: 80px 0;
+	}
+
+}
+
+@media (max-width: 991px) {
+	#website {
+		padding: 50px 0;
+	}
+}

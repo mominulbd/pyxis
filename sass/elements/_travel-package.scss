@@ -1,0 +1,93 @@
+#travel-package {
+	padding: 120px 0 100px;
+}
+
+.travel-package {
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 30px;
+
+	.feature-image{
+		position: relative;
+		.price {
+			position: absolute;
+			padding: 12px 31px;
+			background: $color__theme;
+			color: #fff;
+			border-radius: 4px;
+			left: 50%;
+			bottom: -23px;
+			margin: 0;
+			transform: translateX(-50%);
+			font-size: 18px;
+			font-weight: 500;
+			display: block;
+
+			ins {
+				text-decoration: none;
+			}
+		}
+
+	}
+
+
+	.content {
+		padding: 60px 30px 30px;
+		text-align: center;
+		border: 1px solid #eeeeee;
+		border-top: 0;
+
+		h3 {
+			font-size: 20px;
+			font-weight: 600;
+			color: #222;
+			margin-bottom: 25px;
+		}
+
+		p {
+			font-weight: 500;
+			color: #777777;
+			margin-bottom: 25px;
+		}
+	}
+
+	.book-btn {
+		padding: 11px 38px;
+		background: $section__bg;
+		color: #222;
+		display: inline-block;
+		border: 1px solid #eeeeee;
+		font-weight: 600;
+		border-radius: 3px;
+		background-position: 100%;
+		background-size: 540px;
+		background-image: linear-gradient(30deg, $color__theme 50%, transparent 50%);
+
+		&:hover {
+			color: #fff;
+			background-repeat: no-repeat;
+			background-position: 0;
+			border-color: $color__theme;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0px 20px 50px 0px rgba(153, 153, 153, 0.2);
+		background: #fff;
+
+		.content {
+			border-color: transparent;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	#travel-package {
+		padding: 80px 0 50px;
+	}
+}
+
+@media (max-width: 576px) {
+	#travel-package {
+		padding: 50px 0 20px;
+	}
+}

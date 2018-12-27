@@ -1,0 +1,105 @@
+#softwere-strategies {
+	padding: 140px 0 125px;
+}
+
+.softwere-strategies-content {
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 25px;
+	}
+
+	p {
+		margin-bottom: 40px;
+		font-weight: 500;
+	}
+}
+
+.faq_accordian {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: '';
+		height: 95%;
+		width: 1px;
+		background: #eeeeee;
+		left: 36px;
+		top: 6px;
+	}
+
+	.card {
+		border: 0;
+		// margin-bottom: 15px;
+		background: transparent;
+
+		.card-header {
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+
+			.btn-link {
+				color: #222222;
+				font-size: 20px;
+				font-weight: 500;
+				text-decoration: none;
+
+				i {
+					height: 45px;
+					width: 45px;
+					line-height: 43px;
+					border-radius: 50%;
+					border: 2px solid #eee;
+					text-align: center;
+					color: $color__theme;
+					display: inline-block;
+					font-size: 20px;
+					font-weight: 400;
+					margin-right: 15px;
+					background: #fff;
+					transition: all 0.3s ease-in-out;
+				}
+			}
+
+			&.active {
+				.btn-link {
+					color: $color__theme;
+					i {
+						background: $color__theme;
+						color:#fff;
+						border-color: $color__theme;
+					}
+				}
+			}
+		}
+
+
+
+		.card-body {
+			padding: 0 0 0 80px;
+
+			p {
+				margin: 0;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.softwere-strategies-content {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 991px) {
+	#softwere-strategies {
+		padding: 90px 0 65px;
+	}
+}
+
+@media (max-width: 768px) {
+	#softwere-strategies {
+		padding: 50px 0;
+	}
+}

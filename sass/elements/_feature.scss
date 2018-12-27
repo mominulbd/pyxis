@@ -1,0 +1,458 @@
+#feature {
+	padding: 120px 0 105px;
+}
+
+.analysis-wrapper {
+	background: $section__bg;
+	padding: 50px;
+
+	h2 {
+		font-size: 30px;
+		font-weight: 700;
+		color: #444444;
+		margin-bottom: 40px;
+	}
+
+	.analysis-form {
+		input {
+			border: 0;
+			padding: 11px 15px;
+			outline: 0;
+			background: #fff;
+			border-radius: 3px;
+			width: 100%;
+			margin-bottom: 20px;
+			border-radius: 3px;
+			border: 1px solid #fff;
+			transition: all 0.3s ease-in-out;
+
+			&::placeholder {
+				color: #777777;
+			}
+
+			&:focus, &:hover {
+				border-color: $color__theme;
+			}
+		}
+
+		.submit-btn {
+			outline: 0;
+			display: block;
+			border: 1px solid $color__theme;;
+			width: 100%;
+			text-align: center;
+
+			&:hover {
+				color: $color__theme;
+				background: transparent;
+			}
+		}
+	}
+}
+
+
+/* Feature Box One */
+.feature-box {
+	margin-bottom: 60px;
+
+	.icon {
+		margin-bottom: 15px;
+		max-width: 55px;
+	}
+
+	.content {
+		h3 {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			color: #444444;
+			transition: all 0.3s ease-in-out;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&:hover{
+		.content {
+			h3 {
+				color: $color__theme;
+			}
+		}
+	}
+}
+
+/* Feature Box Two */
+
+#service {
+	padding: 120px 0 50px;
+}
+
+.feature-box-two {
+	margin-bottom: 75px;
+	text-align: center;
+
+	.icon {
+		max-width: 100px;
+		margin: 0 auto 30px;
+
+		img {
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.content {
+		h3 {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 15px;
+			color: #444444;
+			transition: all 0.3s ease-in-out;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&:hover {
+		.icon {
+			img {
+				-webkit-filter: grayscale(0);
+				filter: grayscale(0);
+
+			}
+		}
+
+		.content {
+			h3 {
+				color: $color__theme;
+			}
+		}
+	}
+}
+
+/* Feature Box Three */
+
+#feature-softwere {
+	padding: 100px 0 ;
+}
+
+.feature-box-three {
+	text-align: center;
+	border: 1px solid #eeeeee;
+	padding: 40px 20px;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 30px;
+
+
+	.icon {
+		margin-bottom: 25px;
+
+		i {
+			font-size: 36px;
+			color: #b8bcbd;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.content {
+		.feature-title {
+			font-size: 20px;
+			color: #222222;
+			font-weight: 700;
+		}
+
+		p {
+			margin-bottom: 0;
+			color: #777777;
+			font-weight: 500;
+
+		}
+	}
+
+	&:hover {
+		box-shadow: 0px 20px 50px 0px rgba(153, 153, 153, 0.2);
+		border-color: transparent;
+
+		.icon {
+			i {
+				color: $color__theme;
+			}
+		}
+	}
+
+	&.box-seven {
+		padding-top: 70px;
+		position: relative;
+
+		.icon {
+			width: 80px;
+			height: 80px;
+			line-height: 92px;
+			text-align: center;
+			border: 1px solid #eee;
+			border-radius: 50%;
+			background: #fff;
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: all 0.3s ease-in-out;
+
+			i {
+				font-size: 28px;
+				color: $color__theme;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+
+		&:hover {
+			box-shadow: none;
+			border: 1px solid #eeeeee;
+
+			.icon {
+				background: $color__theme;
+
+				i {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+/* Feature Box Four */
+
+#feature-softwere-two {
+	padding: 170px 0 60px;
+}
+
+
+.feature-box-four {
+	text-align-last: auto;
+	margin-bottom: 40px;
+
+	.icon   {
+		margin-bottom: 20px;
+
+		i {
+			font-size: 34px;
+			color: #b8bcbd;
+			transition: all 0.3s ease-in-out;
+
+		}
+	}
+
+	.content {
+		.feature-title {
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 15px;
+		}
+
+		p {
+			margin: 15px;
+			margin: 0;
+			font-weight: 500;
+		}
+	}
+
+	&:hover {
+		.icon {
+			i {
+				color: $color__theme;
+			}
+		}
+	}
+}
+
+#feature-workflow-two {
+	padding: 120px 0 70px;
+
+	.feature-box-four {
+		margin-bottom: 55px;
+	}
+}
+
+
+/* Feature Box Five */
+
+.feature-box-five {
+	text-align: center;
+	margin-bottom: 30px;
+
+	.icon  {
+		margin-bottom: 35px;
+
+		i {
+			color: #a9a9a9;
+			transition: all 0.3s ease-in-out;
+			font-size: 40px;
+		}
+	}
+
+	.content {
+		h3 {
+			font-size: 20px;
+			font-weight: 600;
+			color: #222;
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&:hover {
+		.icon {
+			i {
+				color: $color__theme;
+			}
+		}
+	}
+}
+
+.buttons-inner {
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+
+	.btn-outline {
+		margin-left: 20px;
+	}
+}
+
+/* Feature Box Six */
+
+#feature-cloud {
+	padding: 120px 0 100px;
+}
+
+.feature-box-six {
+	margin-bottom: 30px;
+	background: #fefefe;
+	border: 1px solid #eeeeee;
+	padding: 35px;
+	transition: all 0.3s ease-in-out;
+
+	.icon  {
+		margin-bottom: 15px;
+
+		i {
+			color: #a9a9a9;
+			transition: all 0.3s ease-in-out;
+			font-size: 30px;
+		}
+	}
+
+	.content {
+		h3 {
+			font-size: 20px;
+			font-weight: 600;
+			color: #222;
+			margin-bottom: 15px;
+		}
+
+		p {
+			margin: 0;
+			font-weight: 500;
+		}
+	}
+
+	&:hover {
+		background: #fff;
+		box-shadow: 0px 10px 40px 0px rgba(153, 153, 153, 0.2);
+		border-color: transparent;
+
+		.icon {
+			i {
+				color: $color__theme;
+			}
+		}
+	}
+}
+
+
+#feature-workflow {
+	padding: 170px 0 100px;
+}
+
+#service-single {
+	padding: 120px 0 90px;
+}
+
+
+@media (max-width: 1024px) {
+	#feature-softwere, #feature-softwere-two {
+		padding: 80px 0 50px;
+	}
+}
+
+@media (max-width: 991px) {
+	#service {
+		padding: 80px 0 20px;
+	}
+	.feature-box-two {
+		margin-bottom: 50px;
+	}
+
+	#feature-cloud , #feature-workflow{
+		padding: 80px 0 50px;
+	}
+
+	#feature-workflow-two {
+		padding: 80px 0 10px;
+	}
+
+	#feature-workflow {
+		padding: 80px 0 10px;
+	}
+
+	#feature {
+		padding: 80px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	#feature-softwere, #feature-softwere-two {
+		padding: 50px 0 20px;
+	}
+
+	#service, #feature-cloud {
+		padding: 50px 0 30px;
+	}
+	.feature-box-two {
+		margin-bottom: 30px;
+	}
+
+	#feature {
+		padding: 50px 0;
+	}
+
+}
+
+@media (max-width: 576px) {
+	.analysis-wrapper {
+		padding: 30px;
+	}
+
+	.buttons-inner {
+		.sofin-btn {
+			padding: 10px 25px;
+		}
+
+		.btn-outline {
+			margin-left: 10px;
+		}
+	}
+
+	#feature-workflow-two .feature-box-four {
+		margin-bottom: 30px;
+	}
+}

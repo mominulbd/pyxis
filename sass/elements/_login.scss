@@ -1,0 +1,152 @@
+#login-register {
+	padding: 230px 0 130px;
+}
+
+.login-form-inner {
+	max-width: 470px;
+	margin: 0 auto;
+
+	.login-form {
+		.input-field {
+			margin-bottom: 25px;
+
+			input {
+				border-radius: 25px;
+				padding: 11px 20px;
+			}
+		}
+	}
+
+	.submit-btn {
+		border-radius: 25px;
+	}
+
+	p {
+		text-align: center;
+
+		a {
+			color: $color__theme;
+			margin: 0;
+		}
+	}
+}
+
+.separator {
+	display: block;
+	text-align: center;
+	position: relative;
+	padding: 60px 0;
+	font-weight: 600;
+	color: #777;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 1px;
+		width: 30%;
+		background: #eee;
+	}
+
+	&:before {
+		left: 0;
+	}
+
+	&:after {
+		right: 0;
+	}
+}
+
+.social-login {
+	margin-bottom: 30px;
+	padding: 0 0 30px 0;
+	list-style: none;
+	text-align: center;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 1px;
+		background: #eee;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 15px;
+
+		a {
+			display: block;
+			background: $color__theme;
+			text-align: center;
+			border-radius: 50%;
+
+			i {
+				display: block;
+				height: 50px;
+				width: 50px;
+				line-height: 50px;
+				color: #fff;
+				font-size: 18px;
+				background: $color__theme;
+				text-align: center;
+				border-radius: 50%;
+			}
+
+			.fa-facebook {
+				background: #3d5a96;
+				display: block;
+			}
+
+			.fa-twitter {
+				background: #1dadeb;
+				display: block;
+			}
+
+			.fa-google-plus {
+				background: #db4c3f;
+				display: block;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+.login-form-inner {
+	&.width-two {
+		max-width: 570px;
+	}
+
+	h2 {
+		font-size: 42px;
+		margin-bottom: 45px;
+	}
+
+	.login-form-two {
+
+
+
+		.input-field {
+			input {
+				background: transparent;
+				border-radius: 3px;
+			}
+		}
+		.submit-btn {
+			border-radius: 3px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			text-align: left;
+		}
+	}
+}

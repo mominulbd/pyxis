@@ -1,0 +1,20 @@
+#marketing-service {
+	background: $section__bg;
+	padding: 130px 0 112px;
+}
+
+@media (max-width: 991px) {
+	.marketing-content-wrapper {
+		margin-bottom: 30px;
+	}
+
+	#marketing-service {
+		padding: 80px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	#marketing-service {
+		padding: 80px 0;
+	}
+}

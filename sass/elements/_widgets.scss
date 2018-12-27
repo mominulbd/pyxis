@@ -1,0 +1,332 @@
+/*
+*
+* Widget Search
+*
+*/
+
+.widget {
+	margin-bottom: 40px;
+
+	.widget-title {
+		font-size: 20px;
+		font-weight: 600;
+		color: #222;
+		margin-bottom: 35px;
+	}
+}
+
+
+.widget_search form {
+	display: flex;
+	padding: 3px;
+
+	label {
+		width: 91%;
+		margin: 0;
+	}
+
+	.search-field {
+		border: 1px solid #eee;
+		background-color: transparent;
+		width: 100%;
+		padding: 10px 20px;
+		height: 50px;
+		outline: 0;
+		font-size: 16px;
+		font-weight: 500;
+
+		&::placeholder {
+			color: #999999;
+		}
+	}
+
+	.search-submit {
+		background: $color__theme;
+		padding: 10px 22px;
+		border: 0;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		outline: 0;
+
+		&:hover {
+			background: #444;
+		}
+	}
+}
+
+
+/*
+*
+* Recent Post
+*
+*/
+
+
+.gp-posts-widget {
+	.post-item {
+		margin-bottom: 20px;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.post-widget-thumbnail {
+		margin-right: 20px;
+		width: 110px;
+		height: 100px;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+	.post-widget-info {
+		flex: 1;
+
+		span {
+			color: #656971;
+			font-size: 14px;
+
+			font-weight: 300;
+		}
+
+		.commemnts {
+			margin-left: 20px;
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 4px;
+				left: -13px;
+				height: 12px;
+				width: 1px;
+				background: #656971;
+			}
+		}
+
+		.post-meta {
+			li {
+
+				position: relative;
+				margin-right: 25px;
+				display: inline-block;
+				padding-left: 0;
+
+				a {
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 26px;
+				}
+
+				&:before {
+					display: none;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					right: -18px;
+					top: 11px;
+					height: 6px;
+					width: 6px;
+					background: #cfcfcf;
+					border-radius: 10px;
+				}
+
+				&:last-child {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.post-widget-title {
+		margin-bottom: 5px;
+		line-height: 26px;
+		font-weight: 600;
+		font-size: 16px;
+
+		a {
+			color: #43464c;
+
+			&:hover {
+				color: $color__theme;
+			}
+		}
+	}
+}
+
+
+/*
+*
+* Widget About
+*
+*/
+
+
+.widget_about {
+
+	.widget-image {
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-weight: 500;
+		margin: 0;
+	}
+}
+
+/*
+*
+* Categories
+*
+*/
+
+.widget {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		> li {
+			position: relative;
+			padding-left: 20px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				height: 8px;
+				width: 8px;
+				background: #c4c4c4;
+				border-radius: 50%;
+				left: 0;
+				top: 40%;
+			}
+
+			a {
+				font-size: 16px;
+				font-weight: 500;
+				color: #777;
+				line-height: 36px;
+				position: relative;
+				display: block;
+				display: flex;
+
+				.content {
+					padding-right: 10px;
+				}
+
+				.sp-border {
+					border-bottom: 1px solid #eee;
+					flex: 2;
+					margin-bottom: 12px;
+				}
+
+				.count {
+					padding-left: 10px;
+				}
+
+				&:hover {
+					color: $color__theme;
+				}
+			}
+		}
+	}
+}
+
+/*
+*
+* Tags
+*
+*/
+
+.tagcloud {
+	a {
+		display: inline-block;
+		padding: 4px 18px;
+		border: 1px solid #eeeeee;
+		border-radius: 2px;
+		color: #777;
+		margin-right: 5px;
+		margin-bottom: 12px;
+		font-size: 14px;
+
+
+		&:hover {
+			background: $color__theme;
+			color: #fff;
+			border-color: $color__theme;
+		}
+	}
+}
+
+/*
+*
+* Widget Subscribe
+*
+*/
+
+.widget-subscribe-form {
+	input {
+		width: 100%;
+		border: 1px solid #eee;
+		background: transparent;
+		padding: 11px 15px;
+		transition: all 0.3s ease-in-out;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		outline: 0;
+
+		&::placeholder {
+			color: #999;
+		}
+
+		&:hover {
+			border-color: $color__theme;
+		}
+	}
+
+	.submit-btn {
+		width: 160px;
+		border-radius: 3px;
+	}
+}
+
+/*
+*
+* Price Slider
+*
+*/
+
+.ui-widget.ui-widget-content {
+	border: 0;
+	background: #ececec;
+	margin-bottom: 15px;
+}
+
+.ui-slider .ui-slider-handle {
+	background: #fff;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	outline: 0;
+
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+	border: 5px solid $color__theme;
+
+}
+
+.widget_price {
+	#amount {
+		font-size: 16px;
+		font-weight: 700;
+		color: #222;
+		font-family: $font__heading;
+	}
+}

@@ -1,0 +1,225 @@
+#event {
+	padding: 120px 0 110px;
+}
+
+.schedule-wrapper {
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+//Container
+.gp-tabs-container {
+
+	//tabs
+	.gp-tabs {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 30px;
+
+		.gp-child {
+			display: inline;
+			text-align: center;
+			&.is-active a {
+				color: $color__theme !important;
+			}
+		}
+
+		//link element
+		a {
+
+			display: inline-block;
+			width: 24.4%;
+			text-decoration: none;
+			color: #222;
+			font-size: 20px;
+			font-weight: 600;
+
+			transition: all .3s;
+			&:hover {
+				color: lighten(#1e004f, 15%);
+			}
+		}
+		//Settings for underline
+		.tab-1.is-active {
+			margin: 0;
+		}
+
+		.tab-2.is-active ~ .slider {
+			margin-left: 25%;
+		}
+
+		.tab-3.is-active ~ .slider {
+			margin-left: 50%;
+		}
+
+		.tab-4.is-active ~ .slider {
+			margin-left: 75%;
+		}
+		//Flying underline
+		// .slider {
+		// 	height: 2px;
+		// 	border-radius: 10px;
+		// 	width: 25%;
+		// 	margin: 0;
+		// 	background: $color__theme;
+		// 	border: none;
+		// 	transition: .3s ease-in-out;
+		// }
+	}
+}
+
+//Tab content
+.gp-tab-content {
+	display: none;
+	min-height: 312px;
+	margin-top: 40px;
+	//Active state
+	&.is-active {
+		display: block;
+	}
+
+	.event-schedule {
+		background: $section__bg;
+		padding: 35px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		border: 1px solid #f6f6f6;
+		transition: all 0.3s ease-in-out;
+
+		.speaker-thumb {
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			border: 3px solid #eef1f4;
+		}
+
+		.content {
+			flex: 1;
+
+			.top  {
+				margin-bottom: 15px;
+			}
+
+			.name {
+				font-size: 20px;
+				font-weight: 600;
+				color: #222;
+				display: inline-block;
+				transition: all 0.3s ease-in-out;
+				margin: 0;
+				transition: all 0.3s ease-in-out;
+			}
+
+			.schedule-time {
+				display: inline-block;
+				margin-left: 20px;
+				font-size: 14px;
+				color: #777;
+				transition: all 0.3s ease-in-out;
+			}
+
+			.event-title {
+				font-size: 16px;
+				font-weight: 500;
+				color: #666;
+				transition: all 0.3s ease-in-out;
+			}
+
+			p {
+				margin: 0;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+
+		&:hover {
+			background: $color__theme;
+
+			.content {
+				.name, .schedule-time, .event-title, p {
+					color: #fff;
+				}
+
+
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 991px) {
+	.gp-tabs-container .gp-tabs a {
+		font-size: 16px;
+	}
+
+	#event {
+		padding: 80px 0;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.gp-tabs-container .gp-tabs {
+		display: flex;
+		flex-wrap: wrap;
+
+		.gp-child {
+			width: 50%;
+			text-align: center;
+
+			a {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	#event {
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.gp-tab-content .event-schedule {
+		padding: 20px;
+
+		.speaker-thumb {
+			height: 70px;
+			width: 70px;
+			margin-right: 10px;
+		}
+
+
+
+		.content {
+			.top {
+				margin-bottom: 5px;
+			}
+			.name {
+				font-size: 16px;
+			}
+
+			.event-title {
+				font-size: 14px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 22px;
+			}
+		}
+	}
+
+
+}
+
+@media (max-width: 420px) {
+	.gp-tabs-container .gp-tabs{
+		padding-bottom: 10px;
+
+		.gp-child {
+			width: 100%;
+		}
+
+	}
+}

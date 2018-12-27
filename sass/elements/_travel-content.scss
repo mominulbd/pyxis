@@ -1,0 +1,32 @@
+#travel-content {
+	background: $color__theme;
+	padding: 120px 0 110px;
+}
+
+.travel-content-thumb {
+
+
+	img {
+		margin-left: auto;
+		display: block;
+	}
+}
+
+@media (max-width: 991px) {
+	.travel-content-thumb img {
+		margin-left: -20px;
+		margin-top: 30px;
+	}
+
+	#travel-content {
+		padding: 80px 0;
+	}
+}
+
+
+
+@media (max-width: 768px) {
+	#travel-content {
+		padding: 50px 0;
+	}
+}

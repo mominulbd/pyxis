@@ -1,0 +1,14 @@
+#awesome-screen {
+	padding-bottom: 80px;
+}
+
+.screenshort-wrapper {
+	max-width: 630px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	#awesome-screen {
+		padding-bottom: 60px;
+	}
+}

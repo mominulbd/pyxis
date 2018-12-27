@@ -1,0 +1,26 @@
+#offer {
+	background: $section__bg;
+	padding: 120px 0 90px;
+}
+
+@media (max-width: 991px) {
+	.offer-image{
+		margin-top: 40px;
+
+		&.text-right {
+			text-align: left !important;
+		}
+	}
+
+	#offer {
+		background: $section__bg;
+		padding: 80px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	#offer {
+		background: $section__bg;
+		padding: 80px 0;
+	}
+}

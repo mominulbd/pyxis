@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Home Softwere - Static Build System</title>
+
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/themify-icons/css/themify-icons.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/slick-carousel/css/slick.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/jquery-ui/css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/bootstrap-datepicker/css/bootstrap-datepicker3.css" type="text/css">
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700%7CRaleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
+	<div class="page-loader">
+		<div class="loader animation-1">
+			<div class="shape shape1"></div>
+			<div class="shape shape2"></div>
+			<div class="shape shape3"></div>
+			<div class="shape shape4"></div>
+		</div>
+	</div>
+	<!-- /.page-loader -->
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header gp-header-sticky">
+			<div class="container">
+				<div class="heder-inner">
+					<div class="site-logo">
+						<a href="index.html" class="logo">
+					<img src="assets/img/pyxis-sticky.png" alt="site logo" class="logo-main">
+					<img src="assets/img/pyxis-sticky.png" alt="site logo" class="logo-sticky">
+				</a>
+					</div>
+					<!-- /.site-logo -->
+
+					<nav class="site-nav">
+						<div id="nav-toggle" class="nav-toggle hidden-md">
+							<div class="toggle-inner">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<!-- /.nav-toggle -->
+
+						<ul class="site-main-menu">
+							<li>
+								<a href="index.html">Home</a>
+
+								<!-- <ul class="sub-menu">
+									<li><a href="index.html">Home Softwere</a></li>
+									<li><a href="index-seo.html">Home Seo</a></li>
+									<li><a href="index-travel.html">Home Travel</a></li>
+									<li><a href="index-event.html">Home Event</a></li>
+									<li><a href="index-cloud.html">Home Cloud</a></li>
+									<li><a href="index-workflow.html">Home Workflow</a></li>
+								</ul> -->
+								<!-- /.sub-menu -->
+							</li>
+							<li><a href="#feature-softwere">Products</a></li>
+							<li><a href="#testimonial-two">Testimonials</a></li>
+							<li><a href="#client-logo-two">Our trusted clients</a></li>
+							<li><a href="#contact">Contact us</a></li>
+							<!-- <li><a href="feature.html">Feature</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li class="menu-item-has-children">
+								<a href="#">Page</a>
+								<ul class="sub-menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="feature.html">Feature</a></li>
+									<li><a href="service.html">Service</a></li>
+									<li><a href="pricing.html">Pricing</a></li>
+									<li><a href="careers.html">Careers</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="job-details.html">Job Details</a></li>
+									<li><a href="terms-condition.html">Terms & Condition</a></li>
+									<li><a href="privacy-policy.html">Privacy Policy</a></li>
+									<li><a href="faqs.html">Faq's</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Portfolio</a>
+										<ul class="sub-menu">
+											<li><a href="portfolio-flat.html">Portfolio Flat</a></li>
+											<li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+											<li><a href="portfolio-grid.html">Portfolio Grid</a></li>
+											<li><a href="portfolio-single.html">Portfolio Single</a></li>
+										</ul>
+									</li>
+
+									<li class="menu-item-has-children">
+										<a href="#">Blog</a>
+										<ul class="sub-menu">
+											<li><a href="blog-grid.html">Grid</a></li>
+											<li><a href="blog-grid-sidebar.html">Grid With Sidebar</a></li>
+											<li><a href="blog-list.html">List</a></li>
+											<li><a href="blog-list-sidebar.html">List With Sidebar</a></li>
+											<li><a href="blog-masonry.html">Masonry</a></li>
+											<li><a href="blog-masonry-sidebar.html">Masonry With Sidebar</a></li>
+											<li><a href="blog-single.html">Single</a></li>
+											<li><a href="blog-single-sidebar.html">Single With Sidebar</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="#">Shop</a>
+										<ul class="sub-menu">
+											<li><a href="product-default.html">Product Default</a></li>
+											<li><a href="product-category.html">Product Category</a></li>
+											<li><a href="single-product.html">Single Product</a></li>
+											<li><a href="shopping-cart.html">Shopping Cart</a></li>
+											<li><a href="checkout.html">Checkout</a></li>
+											<li><a href="my-account.html">My Account</a></li>
+											<li><a href="confirmation.html">Confirmation</a></li>
+											<li><a href="order-tracking.html">Order Tracking</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li> -->
+
+						</ul>
+
+						<!-- <a href="#" class="nav-btn">Free Trile</a> -->
+					</nav>
+					<!-- /.site-nav -->
+				</div>
+				<!-- /.heder-inner -->
+			</div>
+			<!-- /.container -->
+		</header>
+		<!-- /.site-header -->
+
+		<!--==========================-->
+		<!--=         Banner         =-->
+		<!--==========================-->
+		<section class="banner-softwere">
+			<div class="container">
+				<div class="banner-content">
+					<h2 class="banner-title wow fadeInUp">
+						<!-- We Make Digital Advertising <br>
+						Relevant, Impactful and Scaleable -->
+						Skip the race with assured 20% reduction in your customer acquisition cost*.<br>
+						<span class="text-head">Partner with the future. Stand out with World’s most powerful AI to acquire customers.</span>
+					</h2>
+					
+
+					<a href="#" class="sofin-btn banner-btn btn-circle wow fadeInUp" data-wow-delay="0.3s">Request for a Demo</a>
+				</div>
+				<!-- /.banner-content -->
+
+				<div class="banner-mack wow fadeIn" data-wow-delay="0.5s">
+					<img src="media/banner/feature.png" alt="">
+				</div>
+				<!-- /.banner-mack -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.banner-seo -->
+
+		<!--=============================-->
+		<!--=         Feature        =-->
+		<!--=============================-->
+		<section id="feature-softwere">
+			<div class="container">
+				<div class="section-title wow fadeIn">
+					<h2 class="title">Fearture of Software</h2>
+					<p>
+						That is spiffing no biggie starkers my lady cracking goal such a fibber<br> blower he lost his bottle well James.
+					</p>
+				</div>
+				<!-- /.section-title -->
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xl-3 ">
+						<div class="feature-box-three wow fadeInUp" data-wow-delay="0.2s">
+							<div class="icon">
+								<i class="ti-image"></i>
+							</div>
+
+							<div class="content">
+								<h3 class="feature-title">Creative AI</h3>
+
+								<p>
+									An Automated system that delivers tailor-made creatives with understanding of your ideas.
+								</p>
+							</div>
+							<!-- /.content -->
+						</div>
+						<!-- /.feature-box-three -->
+					</div>
+					<!-- /.col-md-6 col-sm-6 col-xl-3  -->
+
+					<div class="col-md-6 col-sm-6 col-xl-3 ">
+						<div class="feature-box-three wow fadeInUp" data-wow-delay="0.3s">
+							<div class="icon">
+								<i class="ti-package"></i>
+							</div>
+
+							<div class="content">
+								<h3 class="feature-title">Targeting AI</h3>
+
+								<p>
+									A big data driven intelligent system that understands and analyses your TG for laser sharp targeting.
+								</p>
+							</div>
+							<!-- /.content -->
+						</div>
+						<!-- /.feature-box-three -->
+					</div>
+					<!-- /.col-md-6 col-sm-6 col-xl-3  -->
+
+					<div class="col-md-6 col-sm-6 col-xl-3 ">
+						<div class="feature-box-three wow fadeInUp" data-wow-delay="0.4s">
+							<div class="icon">
+								<i class="ti-loop"></i>
+							</div>
+
+							<div class="content">
+								<h3 class="feature-title">Optimization AI</h3>
+
+								<p>
+									A hyper adaptive intelligent architecture that seamlessly employs your ad spends and evaluates it with your revenue for
+									optimum return.
+								</p>
+							</div>
+							<!-- /.content -->
+						</div>
+						<!-- /.feature-box-three -->
+					</div>
+					<!-- /.col-md-6 col-sm-6 col-xl-3  -->
+
+					<div class="col-md-6 col-sm-6 col-xl-3 ">
+						<div class="feature-box-three wow fadeInUp" data-wow-delay="0.5s">
+							<div class="icon">
+								<i class="ti-location-arrow"></i>
+							</div>
+
+							<div class="content">
+								<h3 class="feature-title">Reporting analytics</h3>
+
+								<p>
+									Tonk old of morish the ees you knees loo why bobby xford barney.
+								</p>
+							</div>
+							<!-- /.content -->
+						</div>
+						<!-- /.feature-box-three -->
+					</div>
+					<!-- /.col-md-6 col-sm-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /#service -->
+
+		<!--=========================-->
+		<!--=         About         =-->
+		<!--=========================-->
+		<section id="about-softwere">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="about-soft-content wow fadeInUp">
+							<h2 class="title">Creative AI</h2>
+
+							<p>
+								The Pyxis creative AI is trained by over a billion data points which empowers it to understand, evolve and transform
+								your ideas to tailor-made creatives by mapping in highly relevant visual depiction generated using our patented smart
+								layer swap technology.
+							</p>
+
+							<!-- <a href="#" class="learn-btn">Learn More <i class="ti-angle-right"></i></a> -->
+						</div>
+						<!-- /.about-soft-content -->
+					</div>
+					<!-- /.col-md-5 -->
+
+					<div class="col-md-7">
+						<div class="about-feature-image wow fadeInUp" data-wow-delay="0.3s">
+							<img src="media/mockup/ab1.png" alt="">
+						</div>
+						<!-- /.about-feature-image -->
+					</div>
+					<!-- /.col-md-7 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section id="about-softwere">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-7">
+						<div class="about-feature-image wow fadeInUp" data-wow-delay="0.3s">
+							<img src="media/mockup/ab1.png" alt="">
+						</div>
+						<!-- /.about-feature-image -->
+					</div>
+					<!-- /.col-md-7 -->
+
+					<div class="col-md-5">
+						<div class="about-soft-content wow fadeInUp">
+							<h2 class="title">Targeting AI</h2>
+					
+							<p>
+								The Pyxis targeting AI gathers its data from historical learnings, brand relevance, market performance, customer brand
+								perseverance to name a few out of the 500 parameters used to generate modular breakdown of your Target Group (TG) to a
+								micro TG. It uses over 1 million permutations to generate the micro parameters that allows brands to gain control with
+								micro-analysis and create relevance with ensured laser sharp targeting for your product/service.
+							</p>
+					
+							<!-- <a href="#" class="learn-btn">Learn More <i class="ti-angle-right"></i></a> -->
+						</div>
+						<!-- /.about-soft-content -->
+					</div>
+					<!-- /.col-md-5 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section id="about-softwere">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="about-soft-content wow fadeInUp">
+							<h2 class="title">Optimization AI</h2>
+		
+							<p>
+								The Pyxis optimization AI is designed to modulate budgets, parameters, segments and creatives on the fly based on
+								continuous feedback acquired from customer performance and several other complex big data derivations. These helps in
+								maintaining seamless balance between spends and revenue generated/number of customers acquired.
+							</p>
+		
+							<!-- <a href="#" class="learn-btn">Learn More <i class="ti-angle-right"></i></a> -->
+						</div>
+						<!-- /.about-soft-content -->
+					</div>
+					<!-- /.col-md-5 -->
+		
+					<div class="col-md-7">
+						<div class="about-feature-image wow fadeInUp" data-wow-delay="0.3s">
+							<img src="media/mockup/ab1.png" alt="">
+						</div>
+						<!-- /.about-feature-image -->
+					</div>
+					<!-- /.col-md-7 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section id="about-softwere">
+			<div class="container">
+				<div class="row">
+		
+					<div class="col-md-7">
+						<div class="about-feature-image wow fadeInUp" data-wow-delay="0.3s">
+							<img src="media/mockup/ab1.png" alt="">
+						</div>
+						<!-- /.about-feature-image -->
+					</div>
+					<!-- /.col-md-7 -->
+		
+					<div class="col-md-5">
+						<div class="about-soft-content wow fadeInUp">
+							<h2 class="title">Creative AI</h2>
+		
+							<p>
+								The Pyxis creative AI is trained by over a billion data points which empowers it to understand, evolve and
+								transform
+								your ideas to tailor-made creatives by mapping in highly relevant visual depiction generated using our patented
+								smart
+								layer swap technology.
+							</p>
+		
+							<!-- <a href="#" class="learn-btn">Learn More <i class="ti-angle-right"></i></a> -->
+						</div>
+						<!-- /.about-soft-content -->
+					</div>
+					<!-- /.col-md-5 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /#about-softwere -->
+
+
+		<!--================================-->
+		<!--=         Testimonial        =-->
+		<!--================================-->
+		<section id="testimonial-two" class="section-padding">
+			<div class="container">
+				<div class="section-title">
+					<h2 class="title">Client Says</h2>
+					<p>
+						That is spiffing no biggie starkers my lady cracking goal such a fibber<br> blower he lost his bottle well James.
+					</p>
+				</div>
+				<!-- /.section-title -->
+
+				<div class="testimonial-wrapper">
+					<div class="swiper-container testimonial-slider-two wow fadeIn" data-swiper-config='{
+			"loop": true,
+			"speed": 700,
+			"spaceBetween": 30,
+			"autoplay": 33000,
+			"pagination":"#testimonial-pagination-two",
+			"slidesPerView": 3,
+			"paginationClickable": true,
+			"breakpoints": { "1024": { "slidesPerView": 2 }, "768": { "slidesPerView": 1 }, "400": { "slidesPerView": 1 }}}'>
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="testimonial-two">
+
+									<div class="avatar">
+										<img src="media/testimonial/4.jpg" alt="avatar">
+									</div>
+
+									<div class="content">
+										<i class="fa fa-quote-left"></i>
+										<p>
+											That is spiffing smasing tink tonk old of morish the bes the for you knees loo barne wbobby xford barne nees loo why bobby xford
+										</p>
+									</div>
+
+									<div class="user-details">
+
+										<div class="user-info">
+											<h4 class="name">Antini Dock</h4>
+											<span class="position">CEO & Founder - Okler</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testimonial-two">
+
+									<div class="avatar">
+										<img src="media/testimonial/5.jpg" alt="avatar">
+									</div>
+
+									<div class="content">
+										<i class="fa fa-quote-left"></i>
+										<p>
+											That is spiffing smasing tink tonk old of morish the bes the for you knees loo barne wbobby xford barne nees loo why bobby xford
+										</p>
+									</div>
+
+									<div class="user-details">
+
+										<div class="user-info">
+											<h4 class="name">Antini Dock</h4>
+											<span class="position">CEO & Founder - Okler</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testimonial-two">
+
+									<div class="avatar">
+										<img src="media/testimonial/6.jpg" alt="avatar">
+									</div>
+
+									<div class="content">
+										<i class="fa fa-quote-left"></i>
+										<p>
+											That is spiffing smasing tink tonk old of morish the bes the for you knees loo barne wbobby xford barne nees loo why bobby xford
+										</p>
+									</div>
+
+									<div class="user-details">
+
+										<div class="user-info">
+											<h4 class="name">Antini Dock</h4>
+											<span class="position">CEO & Founder - Okler</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<!-- /.case-studies-wrapper -->
+
+				<div class="slider-pagi-inner">
+					<div class="swiper-pagination" id="testimonial-pagination-two"></div>
+				</div>
+				<!-- /.slider-pagi-inner -->
+
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /#testimonial -->
+
+		<!--==============================-->
+		<!--=         Client Logo        =-->
+		<!--==============================-->
+		<section id="client-logo-two">
+			<div class="container">
+				<div class="section-title">
+					<h2 class="wow fadeIn">Our Worldwide Trusted Companies</h2>
+				</div>
+				<!-- /.section-title -->
+		
+				<div class="client-slider wow fadeInUp">
+					<div class="slick-slide"><img src="media/brand/1.png" alt=""></div>
+					<div class="slick-slide"><img src="media/brand/2.png" alt=""></div>
+					<div class="slick-slide"><img src="media/brand/3.png" alt=""></div>
+					<div class="slick-slide"><img src="media/brand/4.png" alt=""></div>
+					<div class="slick-slide"><img src="media/brand/3.png" alt=""></div>
+					<!-- <div class="slick-slide"><img src="media/brand/5.png" alt=""></div> -->
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<!--===========================-->
+		<!--=         Websiite        =-->
+		<!--===========================-->
+		<section id="contact" class="section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="contact-infos">
+							<div class="contact-info wow fadeIn">
+								<div class="icon">
+									<i class="flaticon-call"></i>
+								</div>
+
+								<div class="content">
+									<p>+1- 888 - 391 -2605</p>
+									<p>+1- 888 - 625 -2607</p>
+								</div>
+								<!-- /.content -->
+							</div>
+							<!-- /.contact-info -->
+
+							<div class="contact-info wow fadeIn" data-wow-delay="0.3s">
+								<div class="icon">
+									<i class="flaticon-placeholder"></i>
+								</div>
+
+								<div class="content">
+									<p>
+										32 Eden Park, Buffalo<br> New York, USA
+									</p>
+								</div>
+								<!-- /.content -->
+							</div>
+							<!-- /.contact-info -->
+
+
+							<div class="contact-info wow fadeIn" data-wow-delay="0.5s">
+								<div class="icon">
+									<i class="flaticon-unlink"></i>
+								</div>
+
+								<div class="content">
+									<p>www.codetheme.com</p>
+									<p>www.codetheme.com</p>
+								</div>
+								<!-- /.content -->
+							</div>
+							<!-- /.contact-info -->
+
+						</div>
+						<!-- /.contact-infos -->
+					</div>
+					<!-- /.col-md-4 -->
+
+					<div class="col-md-8">
+						<div class="contact-form-inner wow fadeIn" data-wow-delay="0.5s">
+							<form action="php/mailer.php" class="contact-form" data-sofinform="contact">
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" name="fname" placeholder="First Name" required onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+									</div>
+									<!-- /.col-md-6 -->
+
+									<div class="col-md-6">
+										<input type="text" name="lname" placeholder="Last Name" required onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+									</div>
+									<!-- /.col-md-6 -->
+								</div>
+								<!-- /.row -->
+
+								<input type="text" name="email" placeholder="Last Name" required onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+
+								<textarea placeholder="Your Comment Heare....." name="content" required onfocus="this.placeholder=''" onblur="this.placeholder='Your Comment Heare.....'"></textarea>
+
+								<button type="submit" class="submit-btn sofin-btn">Submit Now</button>
+
+								<div class="form-result alert">
+									<div class="content"></div>
+								</div>
+								<!-- /.form-result-->
+
+							</form>
+							<!-- /.contact-form -->
+						</div>
+						<!-- /.contact-form-inner -->
+					</div>
+					<!-- /.col-md-8 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /#contact -->
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<footer id="footer-two" class="section-padding">
+			<div class="container">
+				<div class="footer-nner text-center">
+					<a href="index.html" class="footer-logo">
+				<img src="assets/img/main-logo.png" alt="logo">
+			</a>
+
+
+					<div class="site-info">
+						<p class="copy-right">© 2018 Your company. All Rights Reserved. Designed By <a href="#">CodePixar</a>.</p>
+					</div>
+					<!-- /.site-info -->
+
+					<ul class="footer-social-link">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					</ul>
+				</div>
+				<!-- /.footer-nner -->
+			</div>
+			<!-- /.container -->
+
+
+		</footer>
+		<!-- /#footer -->
+
+
+	</div>
+	<!-- /#site -->
+
+	<!-- Dependency Scripts -->
+	<script src="dependencies/popper.js/popper.min.js"></script>
+	<script src="dependencies/jquery/jquery.min.js"></script>
+	<script src="dependencies/jquery-ui/js/jquery-ui.min.js"></script>
+	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="dependencies/swiper/js/swiper.jquery.min.js"></script>
+	<script src="dependencies/swiperRunner/js/swiperRunner.min.js"></script>
+	<script src="dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="dependencies/wow/js/wow.min.js"></script>
+	<script src="dependencies/slick-carousel/js/slick.min.js"></script>
+	<script src="dependencies/tilt.js/js/tilt.jquery.js"></script>
+	<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="dependencies/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="dependencies/datepair.js/js/datepair.js"></script>
+	<script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="dependencies/gmap3/js/gmap3.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB13ZAvCezMx5TETYIiGlzVIq65Mc2FG5g"></script>
+
+	<!-- Site Scripts -->
+	<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
