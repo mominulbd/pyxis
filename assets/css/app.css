@@ -2002,7 +2002,7 @@ Creation date: 04/06/2018 14:38
 .banner-softwere .banner-content .banner-title {
   line-height: 55px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 30px;
   color: #222;
 }
@@ -9509,6 +9509,6 @@ thead:first-child > tr:first-child > th {
 }
 
 .text-head{
- font-size: 16px;
+ font-size: 25px;
     font-weight: 500; 
 }
