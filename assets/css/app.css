@@ -4298,7 +4298,8 @@ Creation date: 04/06/2018 14:38
 .about-feature-image img {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 75px;
+  height: 345px;
 }
 
 .learn-btn {
