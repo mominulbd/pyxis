@@ -4298,7 +4298,7 @@ Creation date: 04/06/2018 14:38
 .about-feature-image img {
   position: absolute;
   top: 0;
-  right: 75px;
+  right: auto;
   height: 345px;
 }
 
@@ -4427,8 +4427,10 @@ Creation date: 04/06/2018 14:38
 }
 
 @media (max-width: 768px) {
-  .about-feature-image {
-    display: none;
+  .about-feature-image img {
+    position: relative;
+    margin: auto;
+    display: block;
   }
   .travel-about-content {
     margin-bottom: 40px;
