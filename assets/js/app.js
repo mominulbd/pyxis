@@ -375,6 +375,17 @@ var CODEPIXAR = CODEPIXAR || {};
     /*=================================*/
 
     googleMap: function() {
+      var address = [
+        `Bangalore address
+        info@antecamp.com
+        (518) 457 - 5181 25462
+        9: 30 - 23: 30`,
+        `London address`,
+        `Singpore address`,
+        `Germany address`,
+        `Mumbai address`,
+        `Canada address`
+      ]
       $('.gmap3-area').each(function() {
         var $this = $(this),
           key = $this.data('key'),
@@ -382,151 +393,218 @@ var CODEPIXAR = CODEPIXAR || {};
           lng = $this.data('lng'),
           mrkr = $this.data('mrkr');
 
-        $this.gmap3({
-            center: [lat, lng],
-            zoom: 10,
-            scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [{
-              "featureType": "all",
-              "elementType": "labels.text.fill",
-              "stylers": [{
-                "saturation": 36
-              }, {
-                "color": "#333333"
-              }, {
-                "lightness": 40
-              }]
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: lat, lng: lng },
+          zoom: 3,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [{
+            "featureType": "all",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+              "saturation": 36
             }, {
-              "featureType": "all",
-              "elementType": "labels.text.stroke",
-              "stylers": [{
-                "visibility": "on"
-              }, {
-                "color": "#ffffff"
-              }, {
-                "lightness": 16
-              }]
+              "color": "#333333"
             }, {
-              "featureType": "all",
-              "elementType": "labels.icon",
-              "stylers": [{
-                "visibility": "off"
-              }]
-            }, {
-              "featureType": "administrative",
-              "elementType": "geometry.fill",
-              "stylers": [{
-                "color": "#fefefe"
-              }, {
-                "lightness": 20
-              }]
-            }, {
-              "featureType": "administrative",
-              "elementType": "geometry.stroke",
-              "stylers": [{
-                "color": "#fefefe"
-              }, {
-                "lightness": 17
-              }, {
-                "weight": 1.2
-              }]
-            }, {
-              "featureType": "administrative.country",
-              "elementType": "geometry.stroke",
-              "stylers": [{
-                "saturation": "-9"
-              }]
-            }, {
-              "featureType": "landscape",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#f5f5f5"
-              }, {
-                "lightness": 20
-              }]
-            }, {
-              "featureType": "landscape.natural.landcover",
-              "elementType": "geometry.fill",
-              "stylers": [{
-                "saturation": "-4"
-              }, {
-                "color": "#cdcdcd"
-              }]
-            }, {
-              "featureType": "poi",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#f5f5f5"
-              }, {
-                "lightness": 21
-              }]
-            }, {
-              "featureType": "poi.park",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#dedede"
-              }, {
-                "lightness": 21
-              }]
-            }, {
-              "featureType": "road.highway",
-              "elementType": "geometry.fill",
-              "stylers": [{
-                "color": "#ffffff"
-              }, {
-                "lightness": 17
-              }]
-            }, {
-              "featureType": "road.highway",
-              "elementType": "geometry.stroke",
-              "stylers": [{
-                "color": "#ffffff"
-              }, {
-                "lightness": 29
-              }, {
-                "weight": 0.2
-              }]
-            }, {
-              "featureType": "road.arterial",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#ffffff"
-              }, {
-                "lightness": 18
-              }]
-            }, {
-              "featureType": "road.local",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#ffffff"
-              }, {
-                "lightness": 16
-              }]
-            }, {
-              "featureType": "transit",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#f2f2f2"
-              }, {
-                "lightness": 19
-              }]
-            }, {
-              "featureType": "water",
-              "elementType": "geometry",
-              "stylers": [{
-                "color": "#e9e9e9"
-              }, {
-                "lightness": 17
-              }]
+              "lightness": 40
             }]
-          })
-          .marker(function(map) {
-            return {
-              position: map.getCenter(),
-              icon: mrkr
-            };
-          })
+          }, {
+            "featureType": "all",
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+              "visibility": "on"
+            }, {
+              "color": "#ffffff"
+            }, {
+              "lightness": 16
+            }]
+          }, {
+            "featureType": "all",
+            "elementType": "labels.icon",
+            "stylers": [{
+              "visibility": "off"
+            }]
+          }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+              "color": "#fefefe"
+            }, {
+              "lightness": 20
+            }]
+          }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+              "color": "#fefefe"
+            }, {
+              "lightness": 17
+            }, {
+              "weight": 1.2
+            }]
+          }, {
+            "featureType": "administrative.country",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+              "saturation": "-9"
+            }]
+          }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#f5f5f5"
+            }, {
+              "lightness": 20
+            }]
+          }, {
+            "featureType": "landscape.natural.landcover",
+            "elementType": "geometry.fill",
+            "stylers": [{
+              "saturation": "-4"
+            }, {
+              "color": "#cdcdcd"
+            }]
+          }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#f5f5f5"
+            }, {
+              "lightness": 21
+            }]
+          }, {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#dedede"
+            }, {
+              "lightness": 21
+            }]
+          }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 17
+            }]
+          }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 29
+            }, {
+              "weight": 0.2
+            }]
+          }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 18
+            }]
+          }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#ffffff"
+            }, {
+              "lightness": 16
+            }]
+          }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#f2f2f2"
+            }, {
+              "lightness": 19
+            }]
+          }, {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+              "color": "#e9e9e9"
+            }, {
+              "lightness": 17
+            }]
+          }]
+        });
+
+        var markerBangalore = new google.maps.Marker({
+          position: { lat: lat, lng: lng },
+          map: map,
+          icon: mrkr,
+          title: 'Bangalore'
+        });
+        markerBangalore.addListener("click", function() {
+          map.setZoom(10);
+          map.setCenter(markerBangalore.getPosition());
+          $('.contact-info').html(address[0]);
+        });
+
+        var markerLondon = new google.maps.Marker({
+          position: { lat: 51.5171931, lng: -0.1445982 },
+          map: map,
+          icon: mrkr,
+          title: 'London'
+        });
+        markerLondon.addListener("click", function() {
+          map.setZoom(10);
+          map.setCenter(markerLondon.getPosition());
+          $(".contact-info").html(address[1]);
+        });
+        
+        var markerSingapore = new google.maps.Marker({
+          position: { lat: 1.2956618, lng: 103.8585702 },
+          map: map,
+          icon: mrkr,
+          title: "Singapore"
+        });
+        markerSingapore.addListener('click', function () {
+          map.setZoom(10);
+          map.setCenter(markerSingapore.getPosition());
+          $('.contact-info').html(address[2]);
+        });
+
+        var markerSingapore = new google.maps.Marker({
+          position: { lat: 50.0827966, lng: 8.6269859 },
+          map: map,
+          icon: mrkr,
+          title: "Germany"
+        });
+        markerSingapore.addListener('click', function () {
+          map.setZoom(10);
+          map.setCenter(markerSingapore.getPosition());
+          $('.contact-info').html(address[3]);
+        });
+
+        var markerMumbai = new google.maps.Marker({
+          position: { lat: 19.2080438, lng: 72.9707978 },
+          map: map,
+          icon: mrkr,
+          title: "Mumbai"
+        });
+        markerMumbai.addListener('click', function () {
+          map.setZoom(10);
+          map.setCenter(markerMumbai.getPosition());
+          $('.contact-info').html(address[4]);
+        });
+
+        var markerMumbai = new google.maps.Marker({
+          position: { lat: 43.8341133, lng: -79.5089566 },
+          map: map,
+          icon: mrkr,
+          title: "Canada"
+        });
+        markerMumbai.addListener('click', function () {
+          map.setZoom(10);
+          map.setCenter(markerMumbai.getPosition());
+          $('.contact-info').html(address[5]);
+        });
+
 
       });
     },
